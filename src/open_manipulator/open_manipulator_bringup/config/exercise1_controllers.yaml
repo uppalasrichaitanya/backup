@@ -1,0 +1,6 @@
+gripper_controller:
+  ros__parameters:
+    type: position_controllers/JointGroupPositionController
+    joints:
+      - gripper_left_joint
+    interface_name: position

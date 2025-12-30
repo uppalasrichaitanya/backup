@@ -1,0 +1,23 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 1000  # Hz
+    
+    simple_joint_controller:
+      type: simple_joint_controller/SimpleJointController
+      
+    gripper_controller:
+      type: position_controllers/JointGroupPositionController
+
+simple_joint_controller:
+  ros__parameters:
+    joints:
+      - joint1
+      - joint2
+      - joint3
+      - joint4
+
+gripper_controller:
+  ros__parameters:
+    joints:
+      - gripper_left_joint
+    interface_name: position
